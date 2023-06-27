@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   builder:
-    name: Builder for test ESP32 project
+    name: Builder for ESP32 project
     runs-on: ubuntu-20.04
 
     steps:
@@ -14,7 +14,7 @@ jobs:
       - name: Install ESP-IDF
         uses: CalinRadoni/esp-idf-v4-action@v2
         with:
-          esp_idf_version: 'v4.1'
+          esp_idf_version: 'v4.4'
 
       - name: Build
         run: |
